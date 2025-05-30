@@ -1,32 +1,102 @@
+/* Overall Gothic style */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    text-align: center;
-    margin: 20px;
+  font-family: 'Cinzel', serif;
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+  text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
+/* Container for the book cards */
 .book-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  margin-top: 50px;
 }
 
+/* Gothic styled book card */
 .book-card {
-    background: white;
-    padding: 15px;
-    width: 200px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: left;
+  background: #2a2a2a;
+  padding: 20px;
+  width: 250px;
+  border-radius: 10px;
+  border: 2px solid #b22222;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+  text-align: left;
 }
 
+/* Gothic heading with a decorative font */
 .book-card h2 {
-    font-size: 18px;
-    color: #333;
+  font-size: 22px;
+  color: #b22222;
+  margin-bottom: 10px;
+  font-family: 'UnifrakturCook', cursive;
 }
 
 .book-card p {
-    font-size: 14px;
-    color: #666;
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+/* Style the dialog with Gothic touches */
+dialog {
+  width: 320px;
+  padding: 20px;
+  border-radius: 10px;
+  border: none;
+  background: #2a2a2a;
+  color: #e0e0e0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* Form elements inside the dialog */
+dialog form div {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input {
+  display: block;
+  width: 90%;
+  padding: 8px;
+  background: #1e1e1e;
+  border: 1px solid #555;
+  border-radius: 5px;
+  color: #e0e0e0;
+}
+
+/* Gothic buttons */
+button {
+  background: #b22222;
+  border: none;
+  color: #e0e0e0;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Cinzel', serif;
+  margin-top: 10px;
+}
+
+button:hover {
+  background: #a31c1c;
+}
+
+/* Container for controls (dialog and New Book button) */
+.controls {
+  margin: 20px;
 }
