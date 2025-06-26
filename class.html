@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Library - Gothic Style</title>
+  <link rel="stylesheet" href="class.css" />
+
+  <!-- Google Fonts for a Gothic vibe -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Container for book cards -->
+  <div class="book-container" id="bookContainer"></div>
+  
+  <!-- Dialog for adding a new book -->
+  <div class="controls">
+    <dialog id="bookDialog">
+      <form id="bookForm">
+        <div>
+          <label for="bTitle">Title :</label>
+          <input type="text" name="title" id="bTitle" placeholder="Enter Your Book Title" required>
+        </div>
+        <div>
+          <label for="bAuthor">Author :</label>
+          <input type="text" name="author" id="bAuthor" required>
+        </div>
+        <div>
+          <label for="pageNum">Number Of Pages :</label>
+          <input type="text" name="page" id="pageNum" required>
+        </div>
+        <div>
+          <label for="bYear">Published Year :</label>
+          <input type="text" name="year" id="bYear" required>
+        </div>
+        <button id="addBtn" type="submit">Add Book</button>
+      </form>
+      <button onclick="libraryApp.closeDialog()">Cancel</button>
+    </dialog>
+    <button id="newBtn" onclick="libraryApp.openDialog()">New Book</button>
+  </div>
+  
+  <script src="class.js"></script>
+</body>
+</html>
